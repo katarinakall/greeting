@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
 public class GreetingServiceTest {
+
     private GreetingService service;
 
     @BeforeEach
