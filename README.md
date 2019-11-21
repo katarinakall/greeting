@@ -17,6 +17,4 @@ Given the following input values account=business and type=big the application r
 (http://localhost:5000/greeting?account=business&type=big)
 In case of invalid input the application returns "No user found matching account: (input account) and type: (input type)".
 
-The allowable values for an account are personal and business.
-The allowable values for id are all positive integers.
-The allowable values for type are small and big.
+The allowable values for account are personal and business, for id are all positive integers and for type are small and big.
