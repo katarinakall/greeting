@@ -19,20 +19,21 @@ public class GreetingController {
             return "No user found matching account: " + account + "and id: " + id;
     }
 
-    @GetMapping(value = "/greeting", params = {"account", "value"})
-    public String greetCustomerWithValues(@RequestParam String account, @RequestParam String value) {
-        if (service.validAccount(account) && service.validValues(value)) {
-            if (value.equalsIgnoreCase("big")) {
+    @GetMapping(value = "/greeting", params = {"account", "type"})
+    public String greetCustomerWithValues(@RequestParam String account, @RequestParam String type) {
+        if (service.validAccount(account) && service.validTypes(type)) {
+            if (type.equalsIgnoreCase("big")) {
                 return "Welcome, business user!";
-            } else if (value.equalsIgnoreCase("small")) {
+            } else if (type.equalsIgnoreCase("small")) {
                 try {
                     throw new Exception("The path is not yet implemented");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                return "The path is not yet implemented";
             }
         }
 
-        return "No user found matching account: " + account + "and value: " + value;
+        return "No user found matching account: " + account + "and type: " + type;
     }
 }

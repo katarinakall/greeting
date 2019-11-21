@@ -19,8 +19,8 @@ public class GreetingService {
             return false;
     }
 
-    public boolean validValues(String value){
-        if(value.equalsIgnoreCase("small") || value.equalsIgnoreCase("big"))
+    public boolean validTypes(String type){
+        if(type.equalsIgnoreCase("small") || type.equalsIgnoreCase("big"))
             return true;
         else
             return false;

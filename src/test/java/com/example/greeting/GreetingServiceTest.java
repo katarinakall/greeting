@@ -34,12 +34,12 @@ public class GreetingServiceTest {
     }
 
     @Test
-    void validValuesSmall() {
-        Assert.isTrue(service.validValues("small"), "Should return true when values are small or big");
+    void validTypesSmall() {
+        Assert.isTrue(service.validTypes("small"), "Should return true when values are small or big");
     }
 
     @Test
-    void validValuesBig() {
-        Assert.isTrue(service.validValues("big"), "Should return true when values are small or big");
+    void validTypessBig() {
+        Assert.isTrue(service.validTypes("big"), "Should return true when values are small or big");
     }
 }
