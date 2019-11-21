@@ -2,6 +2,7 @@
 A basic Dockerized Springboot Maven application with a single REST endpoint GET /greeting.
 
 Build docker img with the command: "docker build -f Dockerfile -t greeting ." 
+
 Run docker img by the following command: "docker run -p 5000:5000 greeting"
 
 Given the following input values account=personal and id=123 the application returns "Hi, userId 123"
