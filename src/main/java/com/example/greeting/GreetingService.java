@@ -11,4 +11,18 @@ public class GreetingService {
         else
             return false;
     }
+
+    public boolean validAccount(String account){
+        if(account.equalsIgnoreCase("personal") || account.equalsIgnoreCase("business"))
+            return true;
+        else
+            return false;
+    }
+
+    public boolean validValues(String value){
+        if(value.equalsIgnoreCase("small") || value.equalsIgnoreCase("big"))
+            return true;
+        else
+            return false;
+    }
 }
